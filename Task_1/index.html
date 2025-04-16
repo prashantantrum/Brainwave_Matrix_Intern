@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="🧠 NeuroDash: Your all-in-one AI productivity assistant for tasks, notes, and focus." />
+  <title>🧠 NeuroDash</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">🧠 NeuroDash</div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#newsletter">Subscribe</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><button onclick="toggleDarkMode()">☀️/🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Good <span id="greeting"></span>, Supercharge Your Productivity with AI</h1>
+          <p>Manage tasks, take smart notes, get AI-powered focus tips — all in one dashboard.</p>
+          <button onclick="scrollToNewsletter()">🚀 Get Early Access</button>
+        </div>
+        <div class="hero-image">
+          <img src="Productive_guy.png" alt="Productivity Illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <h2>What 🧠 NeuroDash Offers</h2>
+      <div class="feature-list">
+        <div class="feature">
+          <h3>📝 Smart Notes</h3>
+          <p>Write, summarize, and auto-organize notes with AI suggestions.</p>
+        </div>
+        <div class="feature">
+          <h3>✅ Task Manager</h3>
+          <p>Plan your day with a powerful to-do system that adapts to your habits.</p>
+        </div>
+        <div class="feature">
+          <h3>🔔 Reminders & Focus Mode</h3>
+          <p>Beat procrastination with custom focus sessions and reminders.</p>
+        </div>
+        <div class="feature">
+          <h3>💬 AI Chat Companion</h3>
+          <p>Ask questions, brainstorm ideas, and get instant suggestions from your AI sidekick.</p>
+        </div>
+        <div class="feature">
+          <h3>📊 Weekly Progress Reports</h3>
+          <p>Track your productivity and growth with visually rich AI-generated reports.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <h2>⁉️ Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-button">What is 🧠 NeuroDash?</button>
+          <div class="faq-content">
+            <p>🧠 NeuroDash is an AI-powered productivity tool designed to help you manage tasks, take notes, set reminders, and improve focus.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-button">How does the Task Manager work?</button>
+          <div class="faq-content">
+            <p>It adapts to your habits by categorizing tasks, setting reminders, and prioritizing tasks to fit your schedule.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-button">Can I integrate 🧠 NeuroDash with other tools?</button>
+          <div class="faq-content">
+            <p>Yes, we are working on integrations with other tools like Google Calendar, Todoist, and more!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Share Section -->
+    <section class="social-share">
+      <h2>Share 🧠 NeuroDash</h2>
+      <div class="social-buttons">
+        <a href="https://twitter.com/intent/tweet?text=Check%20out%20🧠%20NeuroDash%20for%20productivity!" target="_blank" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://🧠NeuroDash.com&title=🧠 NeuroDash" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://wa.me/?text=Check%20out%20🧠%20NeuroDash%20for%20boosting%20productivity" target="_blank" class="social-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial">
+      <h2>✨ What Users Say</h2>
+      <blockquote>NeuroDash changed the way I organize my life. A true game-changer!" - <strong>Prashant</strong></blockquote>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section id="newsletter" class="newsletter">
+      <h2>📬 Stay in the Loop</h2>
+      <p>Subscribe to get early access and productivity tips!</p>
+      <form id="subscribeForm">
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="message"></p>
+    </section>
+    
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <p>&copy; 2025 🧠 NeuroDash. Developed by Prashant Ahirwar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
